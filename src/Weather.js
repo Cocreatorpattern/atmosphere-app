@@ -1,5 +1,5 @@
 import React,{useState}  from "react";
-
+import FormattedDate from "./FormattedDate"
 import axios from "axios";
 import "./Weather.css";
 
@@ -15,6 +15,7 @@ setWeatherData({
     ready: true,
     coordinates: response.data.coord,
     temperature: response.data.main.temp,
+    date:new Date(response.data.dt*1000),
     humidity: response.data.main.humidity,
     description: response.data.weather[0].description,
     iconUrl:"https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
@@ -46,7 +47,9 @@ if (weatherData.ready){
 </form>
 <h1>{weatherData.city}</h1>
 <ul>
- <li>Tuesday 18:00 </li>
+ <li>
+    <FormattedDate date={weatherData.date}/> 
+    </li>
  <li>{weatherData.description} </li>
 </ul>
 <div className="row mt-3">
