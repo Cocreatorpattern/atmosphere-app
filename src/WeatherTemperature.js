@@ -39,13 +39,14 @@ return (
     <div className="WeatherTemperature">
       <span className="temperature">{Math.round(fahrenheit)}</span>
       <span className="unit">
+        
+      <a href="/" className="CelsiusUnit" onClick={showCelsius}>
         °C|{""}
-      <a href="/" onClick={showCelsius}>
-        °F
       </a>
+      |°F
       </span>
     </div>
   );
   
-  }
+}
 }
