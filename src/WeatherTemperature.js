@@ -38,7 +38,7 @@ return (
 }else{
   return (
     <div className="WeatherTemperature">
-      <span className="temperature">{convertToFahrenheit()}</span>
+      <span className="temperature">{Math.round(convertToFahrenheit())}</span>
       <span className="unit">
         
       <a href="/"  onClick={showCelsius}>
