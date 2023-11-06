@@ -19,7 +19,7 @@ function handleResponse(response) {
 console.log(response.data);
 setWeatherData({
     ready: true,
-    coordinates: response.data.coord,
+    coordinates: response.data.coordinates,
     temperature: response.data.main.temp,
     date:new Date(response.data.dt*1000),
     humidity: response.data.main.humidity,
