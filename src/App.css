@@ -1,5 +1,9 @@
 body {
-  background-color: blue;
+  background-image: url("clock.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no repeat;
+
 }
 
 .App {
@@ -11,4 +15,10 @@ body {
 .App footer {
   font-size: 11px;
   margin: 15px 0;
+  color:white;
+  
+}
+
+footer{
+  color:white;
 }

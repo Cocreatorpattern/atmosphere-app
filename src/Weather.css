@@ -1,20 +1,18 @@
-body {
-  background-color: blue;
-}
+
 
 .Weather {
   font-family: arial, sans-serif;
-  border: 4px solid #dadde1;
+  border: 8px solid #dadde1;
   padding: 16px;
   border-radius: 4px;
   background-color: aliceblue;
-  color: purple;
+  color:#00204a;
   box-shadow: gray;
 }
 
 .Weather h1 {
-  color: aqua;
-  font-size: 24px;
+  color:#00204a;
+  font-size: 26px;
   font-weight: 100;
   margin: 20px 0 0 0;
   line-height: 29px;
@@ -52,4 +50,8 @@ body {
   position: relative;
   line-height: 1;
   top: -34px;
+}
+
+.button {
+  color:#00204a
 }
